@@ -6,12 +6,16 @@
 :root {
   --logo:#2675eb ;
 }
- 
+
+/* Global styles */
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
 *::selection{background-color: #63C8FF;color: antiquewhite;}
 a{ text-decoration: none; color: inherit;}
 ul li{ list-style: none; }
+button{ transition: all 1s ease, transform 0.2s ease; }
 button:hover{ background-color: var(--logo) !important; color: rgb(249, 236, 236) !important;}
+button:active{ transform: scale(1.2) !important; }
 html{ font-size: 16px; }
 
 
@@ -24,6 +28,10 @@ nav{
     height: 15vh;
     width: 100%;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
 
     & h1{
         /* border: 1px solid red; */
