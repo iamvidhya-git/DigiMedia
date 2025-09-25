@@ -28,10 +28,7 @@ nav{
     height: 15vh;
     width: 100%;
     justify-content: space-between;
-    position: fixed;
     background-color: white;
-    top: 0;
-    left: 0;
 
     & h1{
         /* border: 1px solid red; */
