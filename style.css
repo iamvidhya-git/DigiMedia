@@ -16,6 +16,7 @@ ul li{ list-style: none; }
 button{ transition: all 1s ease, transform 0.2s ease; }
 button:hover{ background-color: var(--logo) !important; color: rgb(249, 236, 236) !important;}
 button:active{ transform: scale(1.2) !important; }
+input:focus{ border-color: var(--logo);}
 html{ font-size: 16px; }
 
 
@@ -187,7 +188,7 @@ article{
     /* border: 2px solid blue; */
     height: fit-content;
     width: 100%;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.851), white), url(bg3.png);
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.851), white), url(/images/bg3.png);
     background-repeat: no-repeat;
     padding: 15vh 10px 5vh 10px;
 
@@ -415,7 +416,6 @@ aside{
                 font-size: 1.2rem;
                 font-family: Arial, Helvetica, sans-serif;
                 padding: 10px 15px;
-                border: 1.5px solid var(--logo);
                 border-radius: 25px;
                 color: rgba(0,0,0, 0.4);
             }
@@ -427,7 +427,7 @@ aside{
 
             & button{
                 padding: 5px 15px;
-                width: 80%;
+                width: 60%;
                 color: var(--logo);
                 background-color: transparent;
                 border: 2px solid var(--logo);
@@ -457,6 +457,30 @@ footer{
     }
 }
 
+/* when user clicks on the menu icon, The menu should be displayed */
+menu{
+    display: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    background-color: #EBD3F8;
+    padding: 10px 40px;
+    position: absolute;
+    top: 87px;
+    right: 2vw;
+
+    & li{
+        font-size: 1.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px 0px;
+
+        &:hover{
+            color: var(--logo);
+        }
+    }
+}
 
 
 /* ✅ Tablet (600px – 899px) */
@@ -640,7 +664,10 @@ footer{
     }
 }
 
-
+/* when user clicks on the menu icon, The menu shouldn't be displayed in this screen size  or next display sizes */
+menu{
+    display: none;
+}
 
 }
 
