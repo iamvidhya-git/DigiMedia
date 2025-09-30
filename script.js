@@ -5,19 +5,14 @@ let menu = document.querySelector("body>menu");
 
 menuIcon.addEventListener('click', function() {
     if (menu.style.width === '0px') {
-        menu.style.width = '150px';
+        menu.style.width = 'fit-content';
     } else {
         menu.style.width = '0px';
     }
 });
 
-
 menuIcon.addEventListener('mouseover', function() {
-    if (menu.style.width === '0px') {
-        menu.style.width = '150px';
-    } else {
-        menu.style.width = '0px';
-    }
+        menu.style.width = 'fit-content';
 });
 
 
