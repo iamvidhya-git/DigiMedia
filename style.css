@@ -458,25 +458,27 @@ footer{
 }
 
 /* when user clicks on the menu icon, The menu should be displayed */
-menu{
-    display: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 0 20px 20px 0;
-    height: 100vh;
-    width: 120px;
-    background-color:#a9d118;
-    padding: 10px 5px;
+menu{ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: 1px solid black;
+    background-color: var(--logo);
+    height: 100%;
+    width: 0px;
+    transition: all 0.5s;
     position: fixed;
-    top: 1px;
+    top: 0;
     left: 0;
 
-    & li{
-        font-size: 1.3rem;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 10px 0px;
+    overflow-x: hidden;
 
-        &:hover{
-            color: var(--logo);
+    ul>li{
+        font-size: 25px;
+        margin: 10px 0px;
+        padding: 5px 20px;
+        width: 100%;
+
+        &:hover, &:active{
+                background-color: #344CB7;
+                color: white;
         }
     }
 }
