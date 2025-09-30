@@ -11,7 +11,7 @@ menuIcon.addEventListener('click', function() {
     }
 });
 
-menuIcon.addEventListener('mouseover', function() {
+menuIcon.addEventListener('mousemove', function() {
         menu.style.width = 'fit-content';
 });
 
