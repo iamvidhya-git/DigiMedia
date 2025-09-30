@@ -19,5 +19,3 @@ menuIcon.addEventListener("mouseover", function () {
   }
 });
 
-
-
