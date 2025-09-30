@@ -11,9 +11,9 @@ menuIcon.addEventListener('click', function() {
     }
 });
 
-menuIcon.addEventListener('mousemove', function() {
-        menu.style.width = 'fit-content';
-});
+// menuIcon.addEventListener('mousemove', function() {
+//         menu.style.width = 'fit-content';
+// });
 
 
 // line 6 to  12 और 15 से 21 के जगह आप इस कोड को उपयोग कर सकते है पर कोई एक रहने दे । 
