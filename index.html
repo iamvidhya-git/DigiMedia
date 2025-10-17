@@ -8,8 +8,9 @@
 
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">  <!--  This Link for connect with font awesome  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />      <!-- This Link for connect with Animation on scroll AoS  -->
+    
 </head>
 <body>
   <nav>
@@ -25,24 +26,24 @@
     <i class="fa-solid fa-bars"></i>
   </nav>
   <header>
-    <div class="left">
+    <div class="left" data-aos="fade-right">
       <h2>Better Sleep, Better Life</h2>
       <h1>We Diagnose Your Sleep Issues</h1>
       <p>This Sleep Care Clinic website is created for health awareness and patient services. Feel free to use our resources for better sleep and wellness. You are not allowed to copy our complete design or content for other clinics or websites. Thank you .</p>
       <button class="free-btn">Free Quote</button>
     </div>
-    <div class="right">
+    <div class="right" data-aos="fade-left">
       <img src="images\right1.png" alt="">
     </div>
   </header>
 
 
   <section>
-    <div class="left">
+    <div class="left" data-aos="fade-right">
         <img src="images\left2.png" alt="">
     </div>
 
-    <div class="right">
+    <div class="right" data-aos="fade-left">
      <h3>About Sleep Care</h3>
       <h1>Sleep apnoea</h1>
       <p class="skip-p">Sleep apnea is a potentially serious sleep disorder in which breathing involuntarily stops and starts. Repetitive episodes of upper airway blockage during sleep, is called obstructive sleep apnea. However, in central sleep apnea, the airway is not blocked but the brain fails to signal the muscles to breathe.</p>
@@ -170,5 +171,16 @@
   </menu>
   
   <script src="script.js"></script>
+
+  
+  <!-- Starting Animation on Scroll & AoS part -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:120, // offset (in px) from the original trigger point
+      delay: 300, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+    });
+  </script>
 </body>
 </html>
